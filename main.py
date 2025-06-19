@@ -9,7 +9,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 # Function to send a message to GPT-4o
 def chat_with_gpt(message):
     response = openai.ChatCompletion.create(
-        model="gpt-4o",
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": "You are a helpful and friendly chatbot."},
             {"role": "user", "content": message}
